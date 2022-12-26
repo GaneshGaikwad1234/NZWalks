@@ -42,7 +42,7 @@ namespace NZWalks.API.Controllers
             //    };
             //    RegionsDTOList.Add(regionDTO);
             //}
-            var RegionsDTOList=mapper.Map < List<Models.Domain.Region>>(regions);
+            var RegionsDTOList=mapper.Map < List<Models.DTO.Region>>(regions);
 
             return Ok(RegionsDTOList);
             

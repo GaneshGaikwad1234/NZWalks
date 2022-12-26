@@ -8,5 +8,11 @@
         public double Lat { get; set; }
         public double Long { get; set; }
         public long Population { get; set; }
+
+        //Navigation Properties
+
+        public Region Region { get; set; }
+
+        public WalkDifficulty WalkDifficulty { get; set; }
     }
 }

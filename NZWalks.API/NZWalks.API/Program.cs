@@ -13,6 +13,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<NZWalksDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("NZWalks")));
 builder.Services.AddScoped<IRegionsRepo,RegionsRepo>();
+builder.Services.AddScoped<IWalkRepo, WalkRepo>();
+builder.Services.AddScoped<IWalkDifficultyRepo,WalkDifficultyRepo>();
 builder.Services.AddAutoMapper(typeof(Program).Assembly);
 
 var app = builder.Build();
